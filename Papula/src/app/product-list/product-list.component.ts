@@ -19,7 +19,7 @@ export class ProductListComponent implements OnInit {
   ) { }
 
   addToCart(){
-    window.alert("Your product has been added to the cart!");
+    alert("Your product has been added to the cart!");
     this.cartService.addToCart(this.product)
   }
 

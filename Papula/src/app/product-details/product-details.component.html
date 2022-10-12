@@ -2,11 +2,11 @@
     <h2>Product Details</h2>
     <img src="{{product.img}}" alt="{{product.name}}">
     <h3>{{ product.name }}</h3>
-    <h4>{{ product.price | currency:"EUR":true }}</h4>
+    <h4>{{ product.price | currency:"EUR" }}</h4>
     <p>{{ product.description }}</p>
 </div>
 <div class="row row-col-2">
     <a routerLink="" class="btn btn-dark col m-1">Back</a>
-    <a href="" class="btn btn-dark col m-1" (click)="addToCart()">Buy now</a>
+    <a class="btn btn-dark col m-1" (click)="addToCart()">Buy now</a>
 </div>
 

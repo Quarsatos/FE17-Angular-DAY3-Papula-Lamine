@@ -17,16 +17,14 @@ export class ProductDetailsComponent implements OnInit {
     private cartService: CartService
     ) { }
 
-    addToCart(){
-      window.alert("Your product has been added to the cart!");
-      this.cartService.addToCart(this.product)
-    }
-
   ngOnInit(): void {
     this.route.params.subscribe((params: Params) =>{
       this.id = + params["productId"];
       this.product =  products[this.id]
     });
   }
-
+  addToCart(){
+    alert("Your product has been added to the cart!");
+    this.cartService.addToCart(this.product)
+  }
 }

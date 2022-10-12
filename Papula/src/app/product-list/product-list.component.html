@@ -5,11 +5,11 @@
             <div class="card-body">
               <h5 class="card-title">{{product.name}}</h5>
               <ul>
-                <li><p class="card-text pb-3">{{product.price | currency:"EUR":true }}</p></li>
+                <li><p class="card-text pb-3">{{product.price | currency:"EUR" }}</p></li>
               </ul> 
               <div class="row row-col-2">          
                 <a routerLink="products/{{productId}}" class="btn btn-dark col m-1">Details</a>
-                <a href="" class="btn btn-dark col m-1" (click)="addToCart()">Buy now</a>
+                <a class="btn btn-dark col m-1" (click) = "addToCart()">Buy now</a>
               </div>  
             </div>
         </div>
