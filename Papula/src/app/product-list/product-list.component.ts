@@ -18,12 +18,13 @@ export class ProductListComponent implements OnInit {
     private cartService: CartService
   ) { }
 
-  addToCart(){
+  addToCart(product: IProducts){
     alert("Your product has been added to the cart!");
-    this.cartService.addToCart(this.product)
+    this.cartService.addToCart(product)
   }
 
   ngOnInit(): void {
+
   }
 
 }

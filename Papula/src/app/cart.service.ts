@@ -18,4 +18,11 @@ export class CartService {
     this.items = [];
     return this.items;
   }
+  getTotal(){
+    let total: number = 0;
+    for(let item of this.items){
+      total += item.price*item.qtty;
+    }
+    return total
+  }
 }
